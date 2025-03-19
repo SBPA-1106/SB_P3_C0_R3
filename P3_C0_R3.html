@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <!--Copyright © 2025 Kamenska-Knjiga Group. All rights reserved.-->
+
+  <meta charset="UTF-8">
+  <title class="notranslate">Kamenska-Knjiga</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name=apple-mobile-web-app-capable content=yes>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Images_C0_G@main/Icon.ico" type="image/x-icon">
+  <style>
+    body{
+    font-family: "Roboto", serif;
+    background-color:white;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    overflow-y:scroll;
+    overflow-x:hidden;
+    }
+
+    :root {
+        --Header-Container-Height:15vh;
+        --Header-Font-Size:50px;
+    
+        --Text-Font-Size:20px;
+        --Text-Top-D:20vh;
+    
+        --BackHomeButton-Height: 50px;
+      }
+    
+      @media only screen and (max-width: 480px){
+        :root {
+            --Header-Container-Height:10vh;
+            --Header-Font-Size:27px;
+    
+            --Text-Font-Size:18px;
+            --Text-Top-D:15vh; 
+    
+            --BackHomeButton-Height:25px;
+        }
+      }
+    
+    .Container-Header{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+        height:var(--Header-Container-Height);
+        background-color:#fff;
+        position:absolute;
+        width:100vw;
+        padding:0px;
+        margin:0px;
+        left:0px;
+        top:0px;     
+        }
+    
+    .Logo{
+        transform: translateY(-50%);
+        position:absolute;
+        height:calc(75%);
+        cursor:pointer; 
+        left:2%;
+        top:50%;
+        }
+    
+    .Container-Header > h1{
+        font-size:var(--Header-Font-Size);
+        transform: translateY(-50%);
+        font-family: "Mali", serif; 
+        position:absolute;
+        font-weight:500;
+        padding:0px;
+        margin:0px;
+        width:90%;
+        top:50%;
+        }
+    
+    .BackHomeButton{
+        height: var(--BackHomeButton-Height);
+        transform: translateY(-50%);
+        position:absolute;
+        cursor:pointer;
+        z-index:10;
+        right:2%;
+        top:50%;
+        }
+    
+    .Copyright {
+        box-shadow:0px 1px 1px rgba(0, 0, 0, 0.2);
+        border-top:1px solid rgba(0, 0, 0, 0.2); 
+        font-size:calc(13px + 0.390625vw); 
+        background-color:#fff;
+        text-align:center;
+        font-weight:light;
+        position:fixed;
+        z-index:10000;
+        padding:5px;
+        width:100vw;
+        margin:0px;
+        bottom:0%;    
+        left:0%;
+        }
+    
+    .Contract-Text{
+        font-size: var(--Text-Font-Size);
+        transform: translateX(-50%);
+        top:var(--Text-Top-D); 
+        text-align:justify;
+        position:absolute;
+        font-weight:400;
+        color:#000;
+        padding:0px;
+        margin:0px;
+        width:92%;
+        left:50%;
+        }
+    
+    .Heading-Highlight{
+        text-decoration:underline;
+        font-weight:bold;
+        }
+    
+    .Blue-Highlight{
+        text-decoration:underline;
+        -webkit-user-select: text; 
+        -moz-user-select: text; 
+        -ms-user-select: text; 
+        user-select: text;
+        cursor:pointer;
+        color:blue; 
+        } 
+    
+    .Copy-Message{
+        transform: translate(-50%, -50%);
+        background-color:#379BF4; 
+        border-radius:100px;
+        position:fixed;
+        height:10vh;
+        width:25vh;
+        z-index:10;
+        opacity:0;
+        left:50%;
+        top:50%;
+        }
+        
+    .Copy-Message > h1{
+        font-size:var(--Text-Font-Size);
+        transform:translate(-50%, -50%);
+        text-align:center;
+        position:absolute;
+        color:#fff;
+        padding:0px;
+        margin:0px;
+        left:50%;
+        top:50%;
+        }
+        
+    @keyframes animation{
+        0%{opacity:0;}
+        50%{opacity:1;}
+        100%{opacity:0;}
+        }
+        
+    .CopyAnimation{animation: animation 2.5s 0.1s ease-in-out;}
+  </style>
+
+</head>
+<body>
+
+  <div class="Container-Header">
+    <img alt="Logo-Image" src="https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Images_C0_G@main/Logo.png" class="Logo" onclick="location.href='https://sbpa-1106.github.io/SB_P1_C0_R0/P1_C0_R0.html'">
+      <h1 id="TW1">Uvjeti ugovora</h1>
+    <img alt="Icon" src="https://cdn.jsdelivr.net/gh/SBPA-1106/SB_Images_C0_G@main/Home.png" class="BackHomeButton">
+  </div>
+
+  <div class="Copy-Message">
+    <h1>Kopirano</h1>
+  </div>
+
+  <h1 class="Contract-Text">
+    <span class="Heading-Highlight">Izjava o zaštiti podataka:</span></br>
+    Zahvaljujemo što želite koristiti usluge Kamenske-Knjige. Zaštita vaših osobnih podataka za nas je vrlo važna. 
+    U ovoj izjavi o privatnosti objašnjavamo koje podatke prikupljamo, kako ih koristimo i koja prava imate u vezi s vašim podacima.
+    Molimo vas da pažljivo pročitate ovu izjavu kako biste razumjeli kako postupamo s vašim podacima. Hvala vam na povjerenju i razumijevanju.
+    </br></br>
+    <span class="Heading-Highlight">Korištenje <span class="notranslate">"Cookies"</span>:</span></br> 
+    Kamenska-Knjiga ne koristi <span class="notranslate">"Cookies"</span> za pohranu osobnih podataka.
+    </br></br>
+    <span class="Heading-Highlight">Prikupljanje podataka:</span></br>
+    Slanjem slike automatski nam dajete dopuštenje da je objavimo i pohranimo dostavljene podatke. Pohranjeni podaci uključuju vašu e-mail adresu, vaše ime i poslanu sliku. 
+    Vaši osobni podaci neće biti proslijeđeni trećim stranama niti prodani.
+    Podaci se pohranjuju onoliko dugo koliko slika ostaje objavljena na web stranici.
+    </br></br>
+    <span class="Heading-Highlight">Svrha prikupljanja podataka:</span></br> 
+    Vaša slika bit će pohranjena kako bi se mogla prikazati na web stranici. 
+    Vaše ime i e-mail adresa bit će pohranjeni u povjerljivom registru kako bi se omogućila jasna razlika među korisnicima. 
+    Ovo nam olakšava obradu zahtjeva za brisanje slika. 
+    Vaši podaci ostat će pohranjeni u registru dok god slika bude objavljena na web stranici.
+    </br></br>
+    <span class="Heading-Highlight">Objava slike:</span></br>
+    Slanjem e-maila dajete nam dopuštenje da objavimo vašu sliku, kao i navedeno ime i komentar. 
+    Molimo imajte na umu da će vaša slika biti izrezana u format 1:1 iz tehničkih razloga prije objave. 
+    Ako imate zabrinutosti zbog neispravnog izrezivanja slike, preporučujemo da sami izrežete sliku prije slanja.
+    </br></br>
+    <span class="Heading-Highlight">Brisanje slike:</span></br>
+    Ako želite izbrisati svoju sliku, pošaljite e-mail na adresu Post@gmail.com kako biste zatražili brisanje. 
+    U svom e-mailu navedite svoje ime i opis slike koju želite izbrisati. 
+    Datum objave slike također je dovoljan za identifikaciju slike.
+    Nakon što usporedimo vaš zahtjev s podacima pohranjenim u registru i osiguramo da ste ovlaštena osoba, slika će biti izbrisana. 
+    Nakon brisanja, svi povezani podaci također će biti izbrisani.
+    </br></br>
+    <span class="Heading-Highlight">Autorska prava na slike:</span></br>
+    Autorska prava na vašim slikama isključivo pripadaju vama.
+    Kamenska-Knjiga Group nema prava na vaše slike. 
+    Mi samo objavljujemo vaše slike i ne preuzimamo odgovornost ako drugi korisnici kopiraju vaše slike. 
+    Hvala na razumijevanju.
+    </br></br>
+    Slobodno nas kontaktirajte ako je potrebno: <span class="Blue-Highlight notranslate" id="Office-EMail">
+    KamenskaKnigaOffice@gmail.com</span>
+    </br></br></br></br></br></br>
+  </h1>
+
+  <div class="Copyright notranslate">Copyright © 2025 Kamenska-Knjiga Group</div>
+
+  <script>
+    let BackHomeButton = document.querySelector(".BackHomeButton");
+    let CopyMessage = document.querySelector(".Copy-Message");
+    let OfficeEMail = document.querySelector("#Office-EMail");
+    let Heading = document.querySelector("#TW1");
+    let Logo = document.querySelector(".Logo");
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      const LogoWidth = Logo.offsetWidth;
+      Heading.style.left = `calc(${LogoWidth}px + 4%)`;
+    });
+    
+    BackHomeButton.addEventListener('click', BackHome);
+    OfficeEMail.addEventListener('click', CopyOfficeEMail);
+    
+    function BackHome(){
+        window.location.href = "https://sbpa-1106.github.io/SB_P1_C0_R0/P1_C0_R0.html";
+        }
+    
+    function StartCopyMessage(){
+        CopyMessage.classList.add("CopyAnimation");
+        setTimeout(ResetCopyMessage, 2500);
+        }
+    
+    function ResetCopyMessage(){
+        CopyMessage.classList.remove("CopyAnimation");
+        }
+    
+        function CopyOfficeEMail() {
+          var tempInput = document.createElement('input');
+          
+          tempInput.value = this.textContent; 
+        
+          document.body.appendChild(tempInput);
+          
+          tempInput.select();
+        
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(tempInput.value).then(function() {
+         
+              StartCopyMessage();
+            }).catch(function(error) {
+    
+              document.execCommand('copy');
+              StartCopyMessage();
+            });
+          } else {
+    
+            document.execCommand('copy');
+            StartCopyMessage();
+          }
+        
+          document.body.removeChild(tempInput);
+        }    
+    
+    function Translation() {
+      let HTMLLangTag = document.documentElement.lang;
+    
+      if (HTMLLangTag == 'hr') {
+        document.getElementById("TW1").innerHTML = "Uvjeti ugovora";
+      }
+    
+      if (HTMLLangTag == 'en') {
+        document.getElementById("TW1").innerHTML = "Therms of contract";
+      }
+    
+      if (HTMLLangTag == 'de') {
+        document.getElementById("TW1").innerHTML = "AGB";
+      }
+    }
+    
+    function changeLanguage(lang) {
+      document.documentElement.lang = lang;
+    }
+    
+    const langTagObserver = new MutationObserver(function (mutationsList) {
+      for (let mutation of mutationsList) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'lang') {
+          Translation(); 
+        }
+      }
+    });
+    
+    
+    const targetNode = document.documentElement;
+    
+    
+    const config = { attributes: true, attributeFilter: ['lang'] };
+    
+    
+    langTagObserver.observe(targetNode, config);
+  </script>
+
+</body>
+</html>
